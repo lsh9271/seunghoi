@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Song+Myung&family=Stylish&display=swap"
+        rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>Homework_1week_이승회</title>
+
+    <style>
+        .wrap {
+            font-family: 'Black Han Sans', sans-serif;
+            font-family: 'Song Myung', serif;
+            font-family: 'Stylish', sans-serif;
+            width: 700px;
+            margin: 20px auto;
+        }
+
+        .Product_MainPicture {
+            width: 600px;
+            height: 500px;
+            margin: 10px auto;
+            padding: 50px;
+            border: 1px solid;
+            border-radius: 5px;
+            background-image: url("https://pluspng.com/img-png/apple-png-apple-png-2040.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-origin: content-box;
+        }
+
+        .Product_Name_Line {
+            display: inline-block;
+        }
+
+        .Product_Name_Blank {
+            display: inline-block;
+            width: 50px;
+        }
+    </style>
+    <script>
+        function Order() {
+            alert('주문되었습니다.');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="Product_MainPicture">
+    </div>
+
+    <div class="wrap">
+
+        <div class="Product_Name_Line" style="padding-right: 50px;">
+            <h1 class="display-4">사과</h1>
+        </div>
+
+        <div class="Product_Name_Line">
+            가격: 5000원 / 개
+        </div>
+        <div>
+            <hr class="my-4">
+        </div>
+
+        <div>
+            <p>사과는 수확시기에 따라 조생종, 중생종, 만생종으로 나뉜다. 8월 하순 이전이 최성수확기인 조생종에는 미광, 조홍, 서홍, 쓰가루(아오리) 등이 있고, 최성수확기가 9월 상순에서 10월
+                중순까지인 중생종에는 홍로, 홍월, 양광, 추광, 골든딜리셔스, 세계일, 조나골드, 시나노스위트 등이 있다. 10월 하순 이후가 최성수확기인 만생종에는 후지(부사), 홍옥, 감홍, 화홍
+                등이 있다.</p>
+        </div>
+
+        <div>
+            <div>
+                <h1 class="display-4">주문하기</h1>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span  style="width: 150px;" class="input-group-text" id="inputGroup-sizing-default">주문자성함</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01" style="width: 150px;">
+                        수량
+                    </label>
+                </div>
+
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                    <option value="3">6</option>
+                    <option value="3">7</option>
+                    <option value="3">8</option>
+                    <option value="3">9</option>
+                    <option value="3">10</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span  style="width: 150px;" class="input-group-text" id="inputGroup-sizing-default">주소</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span  style="width: 150px;" class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <div style="text-align:center">
+                <button style="width: 150px;" onclick="Order()" type="button" class="btn btn-primary">
+                    주문하기
+                </button>
+            </div>
+
+        </div>
+</body>
+
+</html>
